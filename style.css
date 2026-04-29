@@ -1,0 +1,59 @@
+.rebaixado-highlight {
+  border-bottom: 2px dotted #2e7d32;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.rebaixado-highlight:hover {
+  background-color: rgba(46, 125, 50, 0.1);
+}
+
+#rebaixado-tooltip {
+  position: absolute;
+  z-index: 2147483647;
+  max-width: 380px;
+  min-width: 260px;
+  background: #1a1a2e;
+  color: #eee;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+  padding: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  pointer-events: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.rebaixado-content {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.rebaixado-escudo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.rebaixado-info {
+  flex: 1;
+}
+
+.rebaixado-nome {
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.rebaixado-msg {
+  font-size: 13px;
+  color: #ccc;
+}
+
+.rebaixado-msg strong {
+  color: #4caf50;
+}

@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Seu time já foi rebaixado?",
+  "version": "1.0",
+  "description": "Descubra se o seu clube de futebol brasileiro já foi rebaixado no Campeonato Brasileiro.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["clubes.js", "content.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "icons": {
+    "16": "rebaixado-16x16.png",
+    "48": "rebaixado-48x48.png",
+    "128": "rebaixado-128x128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["escudos/*"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
